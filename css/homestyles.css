@@ -10,7 +10,7 @@
   background-color: #FFF0DA;
   width: 100%;
   justify-content: space-between;
-  padding: 10px 40px;
+  padding: 0.5rem 2.5rem;
 }
 
 body {
@@ -18,7 +18,7 @@ body {
 }
 
 .site-header img {
-  height: 45px;
+  height: 3rem;
   width: auto;
   display: block;
 }
@@ -26,7 +26,7 @@ body {
 .nav-list {
   display: flex;
   align-items: center;                
-  gap: 24px;
+  gap: 1.5rem;
   list-style: none;
 }
 
@@ -34,8 +34,6 @@ body {
   color: #000080;
   font-family: "Lato", Arial, sans-serif;
   font-weight: bold;
-  list-style: none;
-
 }
 
 .nav-list a[aria-current="page"] {
@@ -45,14 +43,14 @@ body {
 .hero-banner {
   display: flex;
   width: 100%;
-  min-height: 550px;
+  min-height: 35rem;
   background-color: #000080;
 }
 
 .hero-content {
   display: flex;
   width: 100%;
-  padding: 40px;
+  padding: 2.5rem;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -60,7 +58,7 @@ body {
 .tagline {
   font-family: "Vollkorn", Arial, sans-serif;
   font-style: italic;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   color:#FFF0DA;
   line-height: 1.5;
@@ -72,14 +70,14 @@ body {
 
 .hero-title h1 {
   font-family: "Vollkorn", Georgia, serif;
-  font-size: 70px;
+  font-size: 4.5rem;
   color:#FFF0DA;
 }
 
 .shop-button {
-  width: 160px;
+  width: 10rem;
   height: auto;
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 
