@@ -40,3 +40,9 @@ body {
   font-weight: bold;
   text-decoration: underline;
 }
+
+.hero-banner {
+  display: flex;
+  width: 100%;
+  min-height: 550px;
+}
