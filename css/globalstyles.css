@@ -1,0 +1,67 @@
+/*used for product pages */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  background-color: #FFF0DA;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0.5rem 2.5rem;
+}
+
+.site-header img {
+  height: 3rem;
+  width: auto;
+  display: block;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-list a {
+  color: #000080;
+  font-family: "Lato", Arial, sans-serif;
+}
+
+.nav-list a[aria-current="page"] {
+  font-weight: bolder;
+}
+
+.site-footer {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  background: #000080;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-links li {
+  color: #FFF0DA;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 1rem;
+}
+
+.footer-links a {
+  display: inline-block;
+  padding: 0.5rem 0;
+  color: #FFF0DA;
+  font-family: "Lato", Arial, sans-serif;
+}
