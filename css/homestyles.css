@@ -32,13 +32,14 @@ body {
 
 .nav-list a {        
   color: #000080;
+  font-family: "Lato", Arial, sans-serif;
+  font-weight: bold;
   list-style: none;
 
 }
 
 .nav-list a[aria-current="page"] {
-  font-weight: bold;
-  text-decoration: underline;
+  font-weight: bolder;
 }
 
 .hero-banner {
@@ -79,4 +80,28 @@ body {
   width: 160px;
   height: auto;
   margin-top: 20px;
+}
+
+
+
+
+.site-footer {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  background: var(--surface);
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;           
+  gap: 0.25rem 1.25rem;
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-links a {
+  display: inline-block;
+  padding: 0.5rem 0;
 }
