@@ -59,8 +59,25 @@
   line-height: 1.5;
 }
 
+.hero-title-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+}
+
 .hero-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: right;
+  align-items: flex-end;
+}
+
+.hero-img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
 }
 
 .hero-title h1 {
