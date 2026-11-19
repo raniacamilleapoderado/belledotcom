@@ -195,21 +195,23 @@ hr {
 .footer-links {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;           
+  justify-content: center;  
+  align-items: center;
   gap: 0.25rem 1.25rem;
-  margin: 0 0 1rem;
+  margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.footer-links li {
+  color: #FFF0DA;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 1rem;
 }
 
 .footer-links a {
   display: inline-block;
   padding: 0.5rem 0;
-  color: #FFF0DA;
-  font-family: "Lato", Arial, sans-serif;
-}
-
-footer p {
   color: #FFF0DA;
   font-family: "Lato", Arial, sans-serif;
 }
