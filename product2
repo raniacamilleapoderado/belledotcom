@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Do Good Work Tee | Life Maxxing</title>
+  <meta name="description" content="Order the Do Good Work Tee from Life Maxxing. Choose your size and order by email.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/homestyles.css">
+  <link rel="stylesheet" href="css/productstyles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&family=Vollkorn:ital,wght@0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="site-header">
+    <img src="images/header-logo.PNG" alt="Life Maxxing">
+
+    <nav aria-label="Main">
+      <ul class="nav-list">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="index.html#shop-home">SHOP</a></li>
+        <li><a href="index.html#about-home">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <nav aria-label="Breadcrumb" class="mb-4">
+      <a href="index.html#shop-home" class="fw-bold text-decoration-underline" style="color: #000080;">&larr; Back to Shop Products</a>
+    </nav>
+
+    <section class="product-card-box p-4 p-md-5 mb-5" aria-labelledby="product-heading">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6 text-center">
+          <div class="product-img-frame">
+            <img src="images/product-do-good-work.png" alt="Do Good Work Tee, front view" class="img-fluid rounded">
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <h1 id="product-heading" class="display-5 fw-bold mb-2">Do Good Work Tee</h1>
+          <p class="price-tag mb-3">400.00 PHP</p>
+          <!-- Edit or delete this description -->
+          <p class="mb-4">
+            A comfortable everyday tee for people who show up and do good work. Soft, breathable cotton with the Life Maxxing trail and surf graphic.
+          </p>
+
+          <form id="order-form">
+            <input type="hidden" id="product-name" value="Do Good Work Tee">
+            <input type="hidden" id="product-price" value="400.00 PHP">
+
+            <div class="row g-3 mb-3">
+              <div class="col-sm-6">
+                <label for="shirt-size" class="form-label fw-bold">Select Size</label>
+                <select id="shirt-size" name="size" class="form-select border-2" style="border-color: #000080;" required>
+                  <option value="Small (S)">Small (S)</option>
+                  <option value="Medium (M)" selected>Medium (M)</option>
+                  <option value="Large (L)">Large (L)</option>
+                  <option value="Extra Large (XL)">Extra Large (XL)</option>
+                </select>
+              </div>
+
+              <div class="col-sm-6">
+                <label for="shirt-quantity" class="form-label fw-bold">Quantity</label>
+                <input type="number" id="shirt-quantity" name="quantity" class="form-control border-2" style="border-color: #000080;" value="1" min="1" max="20" required>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="customer-name" class="form-label fw-bold">Your Name</label>
+              <input type="text" id="customer-name" name="customerName" class="form-control border-2" style="border-color: #000080;" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="mb-4">
+              <label for="order-notes" class="form-label fw-bold">Delivery Address / Order Notes (Optional)</label>
+              <textarea id="order-notes" name="notes" rows="2" class="form-control border-2" style="border-color: #000080;" placeholder="City, preferred courier, or special requests"></textarea>
+            </div>
+
+            <button type="submit" class="image-button">
+              <img src="images/buynow.png" alt="Buy now">
+            </button>
+            <p class="small mt-2 mb-0">Clicking the button opens your email app with your t-shirt order addressed to orders@examplewebsite142.com.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="other-items-heading">
+      <h2 id="other-items-heading" class="h3 fw-bold mb-4">Other Items You May Like</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="other-item-card p-3 h-100 d-flex align-items-center gap-3">
+            <img src="images/dont-be-late-tee.PNG" alt="Don't Be Late Tee" style="width: 110px; height: 110px; object-fit: contain;">
+            <div>
+              <h3 class="h5 fw-bold mb-1">Don't Be Late Tee</h3>
+              <p class="mb-2 fw-bold">400.00 PHP</p>
+              <a href="product1.html" class="fw-bold" style="color: #000080;">View Don't Be Late Tee &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="other-item-card p-3 h-100 d-flex align-items-center gap-3">
+            <img src="images/everyday-comforts-tee.PNG" alt="Everyday Comforts Tee" style="width: 110px; height: 110px; object-fit: contain;">
+            <div>
+              <h3 class="h5 fw-bold mb-1">Everyday Comforts Tee</h3>
+              <p class="mb-2 fw-bold">400.00 PHP</p>
+              <a href="product3.html" class="fw-bold" style="color: #000080;">View Everyday Comforts Tee &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <ul class="footer-links">
+      <li><a href="index.html#about-home">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+    </ul>
+    <p>&copy; Life Maxxing. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="js/order.js"></script>
+</body>
+</html>
