@@ -61,9 +61,9 @@
 
 .hero-title-img {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: stretch;
-  width: 100%;
+  gap: 1rem;
 }
 
 .hero-title {
@@ -76,7 +76,7 @@
 
 .hero-img {
   width: 50%;
-  height: auto;
+  height: 25rem;
   object-fit: cover;
 }
 
