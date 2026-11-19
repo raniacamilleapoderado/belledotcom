@@ -37,17 +37,16 @@
 
 .hero-banner {
   display: flex;
-  width: 100%;
   height: 35rem;
   background-color: #000080;
 }
 
 .hero-content {
   display: flex;
-  width: 100%;
+  flex: 1;
   padding: 2.5rem;
-  flex-direction: column;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .tagline {
@@ -57,31 +56,28 @@
   font-weight: bold;
   color:#FFF0DA;
   line-height: 1.5;
-  align-self: flex-start;
+  margin: 0;
+  flex-shrink: 0;
 }
 
 .hero-title-img {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
   align-self: flex-end;
-  gap: 1rem;
-  width: 100%;
+  gap: 1.5rem;
 }
 
 .hero-title {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+   align-items: flex-end;
   text-align: right;
-  align-items: flex-end;
   flex-shrink: 0;
 }
 
 .hero-img {
-  width: 50%;
-  height: 25rem;
-  object-fit: contain;
+  height: 30rem;
+  display: block;
   flex-shrink: 0;
 }
 
