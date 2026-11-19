@@ -7,7 +7,7 @@
 .site-header {
   display: flex;
   align-items:center;
-  background-color: #FFF0DA;
+  background-color: accent;
   width: 100%;
   justify-content: space-between;
   padding: 0.5rem 2.5rem;
