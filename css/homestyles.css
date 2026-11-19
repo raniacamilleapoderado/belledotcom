@@ -78,7 +78,7 @@
 .hero-img {
   width: 50%;
   height: 25rem;
-  object-fit: block;
+  object-fit: contain;
   flex-shrink: 0;
 }
 
