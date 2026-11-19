@@ -45,4 +45,38 @@ body {
   display: flex;
   width: 100%;
   min-height: 550px;
+  background-color: #000080;
+}
+
+.hero-content {
+  display: flex;
+  width: 50%;
+  padding: 40px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tagline {
+  font-family: "Vollkorn", Arial, sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: bold;
+  color:#FFF0DA;
+  line-height: 1.5;
+}
+
+.hero-title {
+  text-align: right;
+}
+
+.hero-title h1 {
+  font-family: "Vollkorn", serif;
+  font-size: 96px;
+  color:#FFF0DA;
+}
+
+.shop-button {
+  width: 160px;
+  height: auto;
+  margin-top: 20px;
 }
