@@ -52,7 +52,6 @@ body {
   display: flex;
   width: 100%;
   padding: 40px;
-  background-color: #000080;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -71,8 +70,8 @@ body {
 }
 
 .hero-title h1 {
-  font-family: "Vollkorn", serif;
-  font-size: 96px;
+  font-family: "Vollkorn", Georgia, serif;
+  font-size: 70px;
   color:#FFF0DA;
 }
 
