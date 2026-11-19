@@ -3,44 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Home | Life Maxxing</title>
+
   <meta name="description" content="Discover Life Maxxing, where travel-inspired T-shirts celebrate adventure, fun, and making the most out of life.">
-  <link rel="stylesheet" href="css/homestyles.css">
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe"
+  crossorigin="anonymous">
+  <!-- Homepage CSS -->
+  <link rel="stylesheet" href="css/homestyles.css">
 </head>
+
 <body>
 
-  <header class="site-header">
-    <img src="images/header-logo.PNG" alt="Life Maxxing">
+  <header>
+    <nav class="navbar md:navbar-expand bg-1 border-bottom site-header">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/header-logo.PNG" alt="Life Maxxing Logo">
+          </a>
 
-    <nav aria-label="Main">
-      <ul class="nav-list">
-        <li><a href="index.html" aria-current="page">HOME</a></li>
-        <li><a href="#shop-home">SHOP</a></li>
-        <li><a href="#about-home">ABOUT</a></li>
-        <li><a href="contact.html">CONTACT US</a></li>
-      </ul>
+        <button class="btn-icon navbar-toggler" type="button"
+            data-bs-toggle="drawer" data-bs-target="#mainNav"
+            aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <dialog class="drawer drawer-end" id="mainNav">
+            <div class="drawer-header">
+              <h5 class="drawer-title">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+            </div>
+            <div class="drawer-body">
+              <ul class="nav navbar-nav md:ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#shop-home">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about-home">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+
+        </dialog>
+      </div>
     </nav>
   </header>
 
+
   <main>
     <section class="hero-banner">
-      <div class="hero-content">
+      
+      <div class="container-fluid hero-content">
         <p class="tagline">
           Never lacking.<br>
           Just LIFE MAXXING.
         </p>
 
         <div class="hero-title-img">
-          <div class="hero-title">
-            <h1>LIFE<br>
-              MAXXING</h1>
 
-            <a href="#shop-home">
-              <img src="images/shop-button-homepage.PNG" alt="Shop Now" class="shop-button">
+          <div class="hero-title">
+            <h1>
+              LIFE<br>
+              MAXXING
+            </h1>
+
+            <a href="#shop-home" class="hero-button">
+              <img src="images/shop-button-homepage.PNG" alt="Shop Now">
             </a>
           </div>
 
@@ -49,73 +83,97 @@
       </div>
     </section>
 
-    <hr>
+    <div class="section-divider"></div>
+
     <section class="products" id="shop-home">
-      <h2>SHOP PRODUCTS</h2>
-      <div class="product-list">
+      <div class="container">
+        <h2>SHOP PRODUCTS</h2>
 
-        <div class="product">
-          <a href="product1.html"> <!-- the link to indiv product page when u click the image -->
-            <img src="images/dont-be-late-tee.PNG" alt="Don't Be Late T-Shirt">
-          </a>
-          <h3>Don't Be Late Tee</h3>
-          <p>400.00 PHP</p>
-          <a href="product1.html">
-            <img src="images/view-product-button.PNG" alt="Go to Don't Be Late Tee Page">
-          </a>
+        <div class="row g-4 product-list">
+          <div class="md:col-4">
+            <div class="product">
+              <a href="product1.html">
+                <img src="images/dont-be-late-tee.PNG" alt="Don't Be Late T-Shirt" class="product-img">
+              </a>
+              <h3>Don't Be Late Tee</h3>
+
+              <a href="product1.html" class="product-button">
+                <img src="images/view-product-button.PNG" alt="View Product">
+              </a>
+            </div>
+          </div>
+      
+          <div class="md:col-4">
+            <div class="product">
+              <a href="product2.html">
+                <img src="images/everyday-comforts-tee.PNG" alt="Everyday Comforts T-Shirt" class="product-img">
+              </a>
+              <h3>Everyday Comforts Tee</h3>
+
+              <a href="product2.html" class="product-button">
+                <img src="images/view-product-button.PNG" alt="View Product">
+              </a>
+            </div>
+          </div>
+
+          <div class="md:col-4">
+            <div class="product">
+              <a href="product3.html">
+                <img src="images/do-good-work-tee.PNG" alt="Do Good Work T-Shirt" class="product-img">
+              </a>
+              <h3>Do Good Work Tee</h3>
+
+              <a href="product3.html" class="product-button">
+                <img src="images/view-product-button.PNG" alt="View Product">
+              </a>
+            </div>
+          </div>
         </div>
-
-         <div class="product">
-          <a href="product2.html"> 
-            <img src="images/everyday-comforts-tee.PNG" alt="Everyday Comforts Tee">
-          </a>
-          <h3>Everyday Comforts Tee</h3> 
-          <p>400.00 PHP</p>
-          <a href="product2.html">
-            <img src="images/view-product-button.PNG" alt="Go to Everyday Comforts Tee Page">
-          </a>
-        </div>
-
-         <div class="product">
-          <a href="product3.html">
-            <img src="images/do-good-work-tee.PNG" alt="Do Good Work Tee">
-          </a>
-          <h3>Do Good Work Tee</h3> 
-          <p>400.00 PHP</p>
-          <a href="product3.html">
-            <img src="images/view-product-button.PNG" alt="Go to Do Good Work Tee Page">
-          </a>
-         </div>
       </div>
     </section>
     
-    <hr>
+    <div class="section-divider"></div>
+
     <section class="about-us" id="about-home">
-      <h2>ABOUT US</h2>
-      <div class="about-content">
-        <img src="images/aboutus-logo.PNG" alt="Life Maxxing Logo (Simplified)">
-        <p>
-        <span class="brand-orange">Life Maxxing</span> enjoys the outdoor, the sun, and the limitless adventures that awaits us in life, but we know that everyday in itself is as much an adventure.  
-        <br>
-        <br>
-        Our line of comfort tees aim to give your style a spirit of chasing the sun, feeling the breeze, and enjoying the highs of mountain tops. 
-        <br>
-        <br>
-        <span class="brand-blue">Never lacking, just LIFE MAXXING.</span>
-        </p>
+      <div class="container">
+        <h2>ABOUT US</h2>
+
+        <div class="row align-items-center g-4 about-content">
+          <div class="md:col-4 text-center">
+            <img src="images/aboutus-logo.PNG" alt="Simplified Life Maxxing Logo" class="about-img">
+          </div>
+
+          <div class="md:col-8">
+            <p>
+              <span class="brand-orange">Life Maxxing</span> enjoys the outdoor, the sun, and the limitless adventures that awaits us in life, but we know that everyday in itself is as much an adventure.
+              <br><br>
+              Our line of comfort tees aim to give your style a spirit of chasing the sun, feeling the breeze, and enjoying the highs of mountain tops.
+              <br><br>
+              <span class="brand-blue">Never lacking, just LIFE MAXXING.</span>
+            </p>
+          </div>
+        </div>
       </div>
     </section>
-
-    
+  
   </main>
   
-  <hr>
+  <div class="section-divider"></div>
+
   <footer class="site-footer">
-    <ul class="footer-links">
-      <li>Life Maxxing &copy; 2026</li>
-	    <li><a href="contact.html">Contact Us</a></li>
-      <li><a href="privacypolicy.html">Privacy Policy</a></li>
-    </ul>
+    <div class="container">
+      <ul class="footer-links">
+        <li>Life Maxxing &copy; 2026</li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="privacypolicy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
   </footer>
+
+  <script type="module"
+  src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+  crossorigin="anonymous">
+  </script>
 </body>
 </html>
