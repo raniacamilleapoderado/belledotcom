@@ -45,13 +45,13 @@ body {
   display: flex;
   width: 100%;
   min-height: 550px;
-  background-color: #000080;
 }
 
 .hero-content {
   display: flex;
-  width: 50%;
+  width: 100%;
   padding: 40px;
+  background-color: #000080;
   flex-direction: column;
   justify-content: space-between;
 }
