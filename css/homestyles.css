@@ -47,7 +47,6 @@
   padding: 2.5rem;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 2rem;
 }
 
 .tagline {
@@ -66,6 +65,7 @@
   align-items: flex-end;
   align-self: flex-end;
   gap: 1.5rem;
+  min-width: 0;
 }
 
 .hero-title {
