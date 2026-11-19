@@ -38,7 +38,7 @@
 .hero-banner {
   display: flex;
   width: 100%;
-  min-height: 35rem;
+  height: 35rem;
   background-color: #000080;
 }
 
@@ -61,8 +61,8 @@
 
 .hero-title-img {
   display: flex;
-  justify-content: flex-start;
-  align-items: stretch;
+  justify-content: flex-end;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -78,6 +78,7 @@
   width: 50%;
   height: 25rem;
   object-fit: cover;
+  flex-shrink: 0;
 }
 
 .hero-title h1 {
