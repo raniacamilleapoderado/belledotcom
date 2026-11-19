@@ -60,11 +60,14 @@
     font-family: "Lato", Arial, sans-serif;
     font-weight: bold;
     text-align: left;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 .privacy-policy p {
     font-family: "Lato", Arial, sans-serif;
     line-height: 1.8;
+    font-size: 0.75rem;
     margin-bottom: 1rem;
 }
 
