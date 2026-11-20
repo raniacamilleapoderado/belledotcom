@@ -114,7 +114,9 @@ a {
   color: #FFF0DA;
   font-family: "Lato", Arial, sans-serif;
 }
-
-.footer-links a[aria-current="page"] {
-  font-weight: bolder;
+hr {
+  border-top: 10px solid #000080;
+  border-bottom: 10px solid #000080;
+  height: 2rem; 
+  background-color: #FF7518;
 }
