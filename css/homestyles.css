@@ -195,13 +195,14 @@ hr {
   font-weight: bold;
 }
 
+
+
 /* footer */
 .site-footer {
   padding: 1.5rem 1rem;
   text-align: center;
   background: #000080;
 }
-
 
 .footer-links {
   display: flex;
@@ -233,6 +234,16 @@ hr {
 }
 
 
+/* for the navigation bar to align to the right */
+@media screen and (min-width: 769px) {
+  .drawer .drawer-body {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+
+/* for mobile responsive hero */
 @media screen and (max-width: 768px) {
   .hero-banner {
     min-height: auto;
