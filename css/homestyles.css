@@ -60,7 +60,12 @@ hr {
 }
 
 .drawer {
+  padding: 1rem;
   background-color: #FFF0DA;
+}
+
+.drawer-header {
+  justify-content: space-between;
 }
 
 .drawer .nav-link {
