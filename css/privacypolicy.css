@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 .site-header {
   display: flex;
   align-items: center;
@@ -102,7 +106,6 @@
   padding: 0.5rem 0;
   color: #FFF0DA;
   font-family: "Lato", Arial, sans-serif;
-  text-decoration: none;
 }
 
 .footer-links a[aria-current="page"] {
