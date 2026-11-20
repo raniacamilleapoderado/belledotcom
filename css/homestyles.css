@@ -44,16 +44,17 @@ hr {
   display: block;
 }
 
+.nav-link {        
+  color: #000080;
+  font-family: "Lato", Arial, sans-serif;
+  font-weight: bold;
+}
+
 .navbar-nav {
   gap: 1.5rem
 }
 
-.nav-link {        
-  color: #000080;
-  font-family: "Lato", Arial, sans-serif;
-}
-
-.nav-link a[aria-current="page"] {
+.navbar-nav a:hover {
   font-weight: bolder;
   color: #FF7518;
 }
