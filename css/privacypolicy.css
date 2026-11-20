@@ -85,25 +85,31 @@
 }
 
 .site-footer {
-    padding: 1.5rem 1rem;
-    text-align: center;
-    background: var(--surface);
+  padding: 1.5rem 1rem;
+  text-align: center;
+  background: #000080;
 }
 
 .footer-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;           
-    gap: 0.25rem 1.25rem;
-    margin: 0 0 1rem;
-    padding: 0;
-    list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-links li {
+  color: #FFF0DA;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 1rem;
 }
 
 .footer-links a {
-    display: inline-block;
-    padding: 0.5rem 0;
-    background-color: #000080;
-    color: #FFF0DA;
-    font-family: "Lato", Arial, sans-serif;
+  display: inline-block;
+  padding: 0.5rem 0;
+  color: #FFF0DA;
+  font-family: "Lato", Arial, sans-serif;
 }
