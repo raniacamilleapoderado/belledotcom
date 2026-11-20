@@ -40,6 +40,7 @@ a {
     font-family: "Vollkorn", Georgia, serif;
     font-size: 3rem;
     margin-bottom: 1rem;
+    margin-right: 1rem;
 }
 
 .privacy-policy h2 {
@@ -47,6 +48,7 @@ a {
     font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
+    margin-right: 1rem;
 }
 
 .privacy-policy h3 {
@@ -56,6 +58,7 @@ a {
     text-align: left;
     margin-top: 2rem;
     margin-bottom: 1rem;
+    margin-right: 1rem;
 }
 
 .privacy-policy p {
@@ -63,6 +66,7 @@ a {
     line-height: 1.8;
     font-size: 1rem;
     margin-bottom: 1rem;
+    margin-right: 1rem;
 }
 
 .privacy-policy li {
@@ -70,12 +74,14 @@ a {
     font-size: 1rem;
     padding-left: 1.25rem;
     line-height: 1.35;
+    margin-right: 1rem;
 }
 
 .privacy-policy ul {
     padding-left: 1.25rem;
     font-size: 1rem;
     margin-bottom: 0.75rem;
+    margin-right: 1rem;
 }
 
 .site-footer {
