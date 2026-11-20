@@ -32,10 +32,6 @@
   font-family: "Lato", Arial, sans-serif;
 }
 
-.nav-list a[aria-current="page"] {
-  font-weight: bolder;
-}
-
 .privacy-policy h1 {
     font-family: "Vollkorn", Georgia, serif;
     font-size: 3rem;
@@ -107,4 +103,8 @@
   color: #FFF0DA;
   font-family: "Lato", Arial, sans-serif;
   text-decoration: none;
+}
+
+.footer-links a[aria-current="page"] {
+  font-weight: bolder;
 }
