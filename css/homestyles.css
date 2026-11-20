@@ -68,6 +68,10 @@ hr {
   justify-content: space-between;
 }
 
+.drawer-title {
+  margin-bottom: 1rem;
+}
+
 .drawer .nav-link {
   color: #000080;
 }
