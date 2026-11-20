@@ -51,13 +51,14 @@
 
 .privacy-policy h2 {
     font-family: "Lato", Arial, sans-serif;
-    font-size: 1.75rem;
+    font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
 
 .privacy-policy h3 {
     font-family: "Lato", Arial, sans-serif;
+    font-size: 1.50rem;
     font-weight: bold;
     text-align: left;
     margin-top: 2rem;
@@ -67,18 +68,20 @@
 .privacy-policy p {
     font-family: "Lato", Arial, sans-serif;
     line-height: 1.8;
-    font-size: 0.75rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
 }
 
 .privacy-policy li {
     font-family: "Lato", Arial, sans-serif;
-    font-size: 0.75rem;
+    font-size: 1rem;
+    padding-left: 1.25rem;
     line-height: 1.35;
 }
 
 .privacy-policy ul {
     padding-left: 1.25rem;
+    font-size: 1rem;
     margin-bottom: 0.75rem;
 }
 
