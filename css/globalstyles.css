@@ -1,3 +1,5 @@
+
+/* universal header and footer */
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +16,7 @@ a {
   background-color: #FFF0DA;
   width: 100%;
   justify-content: space-between;
-  padding: 1.5rem 2.5rem 0.5rem;
+  padding: 0.5rem 2.5rem;
   border-bottom: 2px solid #FF7518;
 }
 
@@ -87,18 +89,15 @@ hr {
   background-color: #FF7518;
 }
 
-@media (min-width: 48em) {
+@media screen and (max-width: 768px) {
   .site-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
   }
 
   .nav-list {
-    flex-wrap: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 0.75rem 1rem;
   }
