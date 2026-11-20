@@ -94,25 +94,6 @@ textarea:focus-visible {
   display: block;
 }
 
-.site-name {
-  margin: 0;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.site-brand {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: inherit;
-  text-decoration: none;
-}
-
-.site-brand img {
-  width: auto;
-  height: 3rem;
-}
-
 .nav-list {
   display: flex;
   align-items: center;
