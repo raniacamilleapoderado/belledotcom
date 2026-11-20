@@ -39,8 +39,9 @@ a {
 .privacy-policy {
     background-color: #F0F0F0;
     color: #000080;
-    padding: 3rem 10%;
-    min-height: 70vh;
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 .privacy-policy h1 {
