@@ -207,7 +207,7 @@ address {
 .site-footer {
   padding: 1.5rem 1rem;
   text-align: center;
-  background: var(--surface);
+  background: #000080;
 }
 
 .footer-links {
@@ -220,11 +220,18 @@ address {
   list-style: none;
 }
 
+.footer-links li {
+  color: #FFF0DA;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 1rem;
+}
+
 .footer-links a {
   display: inline-block;
   padding: 0.5rem 0;
+  color: #FFF0DA;
+  font-family: "Lato", Arial, sans-serif;
 }
-
 
 
 @media (min-width: 48em) {
