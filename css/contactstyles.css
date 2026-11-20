@@ -40,7 +40,7 @@ a {
 
 body {
   margin: 0;                         
-  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Lato", Arial, sans-serif;
   font-size: 1rem;                  
   line-height: 1.6;                 
   color: var(--text);
@@ -88,7 +88,6 @@ textarea:focus-visible {
   width: 100%;
   justify-content: space-between;
   padding: 0.5rem 2.5rem;
-  border-bottom: 2px solid #FF7518;
 }
 
 .site-header img {
