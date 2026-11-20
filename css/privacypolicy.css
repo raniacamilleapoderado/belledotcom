@@ -4,36 +4,49 @@
   box-sizing: border-box;
 }
 
-.site-header {
-  display: flex;
-  align-items:center;
-  background-color: accent;
-  width: 100%;
-  justify-content: space-between;
+/*header */
+.navbar {
   padding: 0.5rem 2.5rem;
-  border-bottom: 2px solid #FF7900;
+  background-color: #FFF0DA;
+  border-bottom: 2px solid #FF7518;
 }
 
-.site-header img {
+.navbar-brand img {
   height: 3rem;
   width: auto;
   display: block;
 }
 
-.nav-list {
-  display: flex;
-  align-items: center;                
-  gap: 1.5rem;
-  list-style: none;
-}
-
-.nav-list a {        
+.nav-link {        
   color: #000080;
   font-family: "Lato", Arial, sans-serif;
+  font-weight: bold;
 }
 
-.nav-list a[aria-current="page"] {
+.navbar-nav {
+  gap: 1.5rem
+}
+
+.navbar-nav a:hover {
   font-weight: bolder;
+  color: #FF7518;
+}
+
+.drawer {
+  padding: 1rem;
+  background-color: #FFF0DA;
+}
+
+.drawer-header {
+  justify-content: space-between;
+}
+
+.drawer-title {
+  margin-bottom: 1rem;
+}
+
+.drawer .nav-link {
+  color: #000080;
 }
 
 .privacy-policy {
