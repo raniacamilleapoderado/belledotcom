@@ -1,3 +1,4 @@
+/* general */
 * {
   margin: 0;
   padding: 0;
@@ -23,10 +24,13 @@ h3 {
   color:#000;
 }
 
-.section-divider {
+hr {
+  border-top: 10px solid #000080;
+  border-bottom: 10px solid #000080;
   height: 2rem; 
   background-color: #FF7518;
 }
+
 
 /*header */
 .navbar {
@@ -51,6 +55,7 @@ h3 {
 
 .nav-link a[aria-current="page"] {
   font-weight: bolder;
+  color: #FF7518;
 }
 
 .drawer {
@@ -60,6 +65,7 @@ h3 {
 .drawer .nav-link {
   color: #000080;
 }
+
 
 /*hero banner */
 .hero-banner {
@@ -108,17 +114,12 @@ h3 {
   object-fit: contain;
 }
 
-.hero-title h1 {
-  font-family: "Vollkorn", Georgia, serif;
-  font-size: 4.5rem;
-  font-weight: bold;
-  color:#FFF0DA;
-}
-
 .hero-button img {
   width: 10rem;
 }
 
+
+/* shop products */
 .products {
   background-color: #FFF0DA;
   padding: 2rem 1.25rem;
@@ -145,6 +146,7 @@ h3 {
 .product-button img {
   width: 10rem;
 }
+
 
 /* about us */
 .about-us {
@@ -182,6 +184,7 @@ h3 {
   text-align: center;
   background: #000080;
 }
+
 
 .footer-links {
   display: flex;
