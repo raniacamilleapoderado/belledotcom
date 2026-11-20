@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Don't Be Late Tee | Life Maxxing</title>
-  <meta name="description" content="Order the Don't Be Late Tee from Life Maxxing. Cream cotton streetwear tee featuring a retro outdoor trail and wave grid graphic.">
+  <meta name="description" content="Order the Don't Be Late Tee from Life Maxxing. Choose your size and order by email.">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="css/globalstyles.css">
   <link rel="stylesheet" href="css/productstyles.css">
@@ -20,7 +20,7 @@
     <nav aria-label="Main">
       <ul class="nav-list">
         <li><a href="index.html">HOME</a></li>
-        <li><a href="index.html#shop-home" aria-current="page">SHOP</a></li>
+        <li><a href="index.html#shop-home">SHOP</a></li>
         <li><a href="index.html#about-home">ABOUT</a></li>
         <li><a href="contact.html">CONTACT US</a></li>
       </ul>
@@ -42,10 +42,7 @@
 
         <div class="col-md-6">
           <h1 id="product-heading" class="display-5 fw-bold mb-2">Don't Be Late Tee</h1>
-          <p class="price-tag mb-3">400.00 PHP</p>
-          <p class="mb-4">
-            Built for spontaneous road trips, dawn patrol surf sessions, and random side quests. Crafted from breathable, soft-washed cream cotton with a distressed navy blue and pumpkin orange exploration grid print.
-          </p>
+          <p class="price-tag mb-4">400.00 PHP</p>
 
           <form id="order-form">
             <input type="hidden" id="product-name" value="Don't Be Late Tee">
@@ -78,8 +75,10 @@
               <textarea id="order-notes" name="notes" rows="2" class="form-control border-2" style="border-color: #000080;" placeholder="City, preferred courier, or special requests"></textarea>
             </div>
 
-            <button type="submit" class="btn btn-order-now w-100">Order now</button>
-            <p class="small mt-2 mb-0">Clicking "Order now" opens your email app with your t-shirt order addressed to orders@examplewebsite142.com.</p>
+            <button type="submit" class="p-0 border-0 bg-transparent" style="cursor: pointer;">
+              <img src="images/buynow.png" alt="Buy now" style="width: 180px; max-width: 100%; height: auto; display: block;">
+            </button>
+            <p class="small mt-2 mb-0">Clicking "Buy now" opens your email app with your t-shirt order addressed to orders@examplewebsite142.com.</p>
           </form>
         </div>
       </div>
@@ -101,7 +100,7 @@
 
         <div class="col-md-6">
           <div class="other-item-card p-3 h-100 d-flex align-items-center gap-3">
-            <img src="images/do-good-work-tee.PNG" alt="Cream Do Good Work Tee with mountain trail and surf emblem" style="width: 110px; height: 110px; object-fit: contain;">
+            <img src="images/do-good-work-tee.PNG" alt="Cream Do Good Work Tee with an orange sun and wave emblem and navy lettering" style="width: 110px; height: 110px; object-fit: contain;">
             <div>
               <h3 class="h5 fw-bold mb-1">Do Good Work Tee</h3>
               <p class="mb-2 fw-bold">400.00 PHP</p>
@@ -123,6 +122,6 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script src="js/order.js"></script>
+  <script src="js/buynow.js"></script>
 </body>
 </html>
