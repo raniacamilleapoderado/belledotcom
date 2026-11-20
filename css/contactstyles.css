@@ -1,13 +1,32 @@
 :root {
-  --primary: #000080;      
-  --text: #000000;         
+  --primary: #000080;
+  --primary-dark: #00005c;
+  --text: #000000;
+  --muted: #555555;
   --background: #FFFFFF;
-  --border: #ff7518;       
+  --surface: #f4f4f8;
+  --border: #ff7518;
   --error: #B00020;
   --radius: 0.5rem;
 }
 
 
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-list a {
+  color: #000080;
+  font-family: "Lato", Arial, sans-serif;
+}
+
+.nav-list a[aria-current="page"] {
+  font-weight: bolder;
+}
 
 
 *,
@@ -62,10 +81,17 @@ textarea:focus-visible {
 
 .site-header {
   display: flex;
-  flex-direction: column;            
-  gap: 0.5rem;                      
-  background: var(--primary);
-  color: #FFFFFF;                   
+  align-items: center;
+  background-color: #FFF0DA;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0.5rem 2.5rem;
+}
+
+.site-header img {
+  height: 3rem;
+  width: auto;
+  display: block;
 }
 
 .site-name {
@@ -74,26 +100,21 @@ textarea:focus-visible {
   font-weight: bold;
 }
 
+
 .nav-list {
   display: flex;
-  justify-content: space-between;
-  align-items: center;                
-  padding: 16px 40px;
+  align-items: center;
+  gap: 1.5rem;
   list-style: none;
 }
 
 .nav-list a {
-  display: flex;
-  gap: 24px;
-  list-style: none;
-  margin: 0;
-  padding: 0;                
-  color: #FFFFFF;
+  color: #000080;
+  font-family: "Lato", Arial, sans-serif;
 }
 
 .nav-list a[aria-current="page"] {
-  font-weight: bold;
-  text-decoration: underline;
+  font-weight: bolder;
 }
 
 
@@ -161,12 +182,6 @@ textarea:user-invalid {
   border-color: var(--error);
 }
 
-.form-message {
-margin-top: 1rem;
-}
-
-
-
 .button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
@@ -184,13 +199,6 @@ margin-top: 1rem;
   background: #ff7518;
   border-color: #ff7518;
 }
-
-#form-message {
-margin-top: 1rem;
-}
-
-
-
 
 .contact-info {
   padding: 1rem 1.25rem;
@@ -224,6 +232,34 @@ address {
   padding: 0.5rem 0;
 }
 
+.site-footer {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  background: #000080;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-links li {
+  color: #FFF0DA;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 1rem;
+}
+
+.footer-links a {
+  display: inline-block;
+  padding: 0.5rem 0;
+  color: #FFF0DA;
+  font-family: "Lato", Arial, sans-serif;
 
 @media (min-width: 48em) {
 
