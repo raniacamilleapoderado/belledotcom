@@ -10,76 +10,15 @@
   --radius: 0.5rem;
 }
 
-a {
-  text-decoration: none;
-}
-
-.nav-list {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  list-style: none;
-}
-
-.nav-list a {
-  color: #000080;
-  font-family: "Lato", Arial, sans-serif;
-}
-
-.nav-list a[aria-current="page"] {
-  font-weight: bolder;
-}
-
-
-*,
-*::before,
-*::after {
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-
-body {
-  margin: 0;                         
-  font-family: "Lato", Arial, sans-serif;
-  font-size: 1rem;                  
-  line-height: 1.6;                 
-  color: var(--text);
-  background: var(--background);
-}
-
-h1, h2 {
-  line-height: 1.25;
-  margin: 0 0 0.75rem;
-}
-
-h1 { font-size: 2rem; }
-h2 { font-size: 1.375rem; }
-
-p { margin: 0 0 1rem; }
-
 a {
-  color: var(--primary);
+  text-decoration: none;
 }
-a:hover {
-  color: var(--primary-dark);
-}
-
-
-a:focus-visible,
-button:focus-visible,
-input:focus-visible,
-select:focus-visible,
-textarea:focus-visible {
-  outline: 3px solid var(--primary);
-  outline-offset: 2px;
-}
-
-
-.site-header a:focus-visible {
-  outline-color: #FFFFFF;
-}
-
-
 
 .site-header {
   display: flex;
@@ -88,6 +27,7 @@ textarea:focus-visible {
   width: 100%;
   justify-content: space-between;
   padding: 0.5rem 2.5rem;
+  border-bottom: 2px solid #FF7518;
 }
 
 .site-header img {
@@ -106,125 +46,16 @@ textarea:focus-visible {
 .nav-list a {
   color: #000080;
   font-family: "Lato", Arial, sans-serif;
+  font-weight: bold;
+}
+
+.nav-list a:hover {
+  font-weight: bolder;
+  color: #FF7518;
 }
 
 .nav-list a[aria-current="page"] {
   font-weight: bolder;
-}
-
-
-
-main {
-  max-width: 64rem;                 
-  margin: 0 auto;                   
-  padding: 1.5rem 1rem;
-}
-
-.intro {
-  color: var(--muted);
-}
-
-
-.page-layout {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-
-.form-group {
-  margin-bottom: 1.25rem;
-}
-
-label {
-  display: block;                    
-  margin-bottom: 0.25rem;
-  font-weight: bold;
-}
-
-
-.required {
-  font-weight: normal;
-  color: var(--muted);
-}
-
-.hint {
-  margin-bottom: 0.5rem;
-  font-size: 0.9rem;
-  color: var(--muted);
-}
-
-input,
-select,
-textarea {
-  display: block;
-  width: 100%;                      
-  padding: 0.75rem;                  
-  font: inherit;                     
-  color: var(--text);
-  background: #FFFFFF;
-  border: 2px solid #000080;
-  border-radius: 0.5rem;
-}
-
-textarea {
-  resize: vertical;                  
-}
-
-input:user-invalid,
-select:user-invalid,
-textarea:user-invalid {
-  border-color: var(--error);
-}
-
-.button {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  font: inherit;
-  font-weight: bold;
-  color: #FFFFFF;
-  background: var(--primary);
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;                  
-}
-
-
-.button:hover {
-  background: #ff7518;
-  border-color: #ff7518;
-}
-
-.contact-info {
-  padding: 1rem 1.25rem;
-  background: var(--surface);
-  border-radius: var(--radius);
-}
-
-address {
-  font-style: normal;               
-}
-
-
-.site-footer {
-  padding: 1.5rem 1rem;
-  text-align: center;
-  background: var(--surface);
-}
-
-.footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.25rem 1.25rem;
-  margin: 0 0 1rem;
-  padding: 0;
-  list-style: none;
-}
-
-.footer-links a {
-  display: inline-block;
-  padding: 0.5rem 0;
 }
 
 .site-footer {
@@ -257,49 +88,179 @@ address {
   font-family: "Lato", Arial, sans-serif;
 }
 
-@media (min-width: 48em) {
+.footer-links a:hover {
+  color: #FF7518;
+}
 
-  
+hr {
+  border-top: 10px solid #000080;
+  border-bottom: 10px solid #000080;
+  height: 2rem;
+  background-color: #FF7518;
+}
+
+@media screen and (max-width: 768px) {
   .site-header {
-    display: flex;
-    justify-content: space-between;  
-    align-items: center;
-    padding: 1rem;
-    color: #ff7518;
-  }
-
-  nav ul {
-    display: flex;
+    flex-direction: column;
     gap: 1rem;
-    margin: 0;
-    list-style: none;
+    padding: 1rem;
   }
 
+  .nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem 1rem;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--background);
+}
+
+h1, h2 {
+  line-height: 1.25;
+  margin: 0 0 0.75rem;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.375rem; }
+
+p { margin: 0 0 1rem; }
+
+a {
+  color: var(--primary);
+}
+a:hover {
+  color: var(--primary-dark);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.site-footer a:focus-visible {
+  outline-color: #FFF0DA;
+}
+
+main {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+.intro {
+  color: var(--muted);
+}
+
+.page-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+.required {
+  font-weight: normal;
+  color: var(--muted);
+}
+
+.hint {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+input,
+select,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  font: inherit;
+  color: var(--text);
+  background: #FFFFFF;
+  border: 2px solid #000080;
+  border-radius: 0.5rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:user-invalid,
+select:user-invalid,
+textarea:user-invalid {
+  border-color: var(--error);
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font: inherit;
+  font-weight: bold;
+  color: #FFFFFF;
+  background: var(--primary);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #ff7518;
+  border-color: #ff7518;
+}
+
+.contact-info {
+  padding: 1rem 1.25rem;
+  background: var(--surface);
+  border-radius: var(--radius);
+}
+
+address {
+  font-style: normal;
+}
+
+@media (min-width: 48em) {
   main {
     padding: 2rem;
   }
 
-  
   .page-layout {
     flex-direction: row;
     align-items: flex-start;
   }
 
   .contact-form {
-    flex: 2;                         
+    flex: 2;
   }
 
   .contact-info {
-    flex: 1;                   
+    flex: 1;
   }
 }
-
-
 
 @media (prefers-reduced-motion: reduce) {
   * {
     transition: none !important;
     animation: none !important;
   }
-}
 }
